@@ -5,6 +5,7 @@ Test Teardown       Close Browser
 ${URL_web}      https://www.google.com/
 ${Text_box}     name=q
 ${Search_botton}   name=btnK
+${test}         1 
 *** Keywords ***
 Open web
     [Arguments]     ${Browser}
