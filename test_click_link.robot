@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-# Test Teardown       Close Browser
+Test Teardown       Close Browser
 *** Variable ***
 ${URL_web}      https://www.google.com/
 ${Text_box}     name=q
@@ -26,10 +26,9 @@ Verify Text
 *** Test Case ***
 Search_link_Test
     Open web  gc
-    Search_Text     robotfreamwork
-    Verify Text     robotfreamwork
+    Search_Text     robot freamwork
+    Verify Text     robot freamwork
     Click Element       ${link_robot}
     Page Should Contain Element        id=c92c          
 
-    # Location Should Be      https://iamgique.medium.com/         
     
