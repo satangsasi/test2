@@ -29,6 +29,6 @@ Search_link_Test
     Search_Text     robot framework
     Verify Text     robot framework
     Click Element       ${link_robot}
-    Page Should Contain Element        id=c92c          
+    Page Should Not Contain Link     {link_robot}                  
 
     
