@@ -29,6 +29,7 @@ Search_link_Test
     Search_Text     robot framework
     Verify Text     robot framework
     Click Element       ${link_robot}
-    Page Should Not Contain Link     ${link_robot}                  
+    Wait Until Page Does Not Contain Element       ${link_robot}
+                 
 
     
