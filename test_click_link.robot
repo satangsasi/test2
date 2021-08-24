@@ -26,8 +26,8 @@ Verify Text
 *** Test Case ***
 Search_link_Test
     Open web  gc
-    Search_Text     robot freamwork
-    Verify Text     robot freamwork
+    Search_Text     robot framework
+    Verify Text     robot framework
     Click Element       ${link_robot}
     Page Should Contain Element        id=c92c          
 
