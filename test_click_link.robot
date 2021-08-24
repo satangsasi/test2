@@ -12,7 +12,7 @@ Open web
     [Arguments]     ${Browser}
     Open Browser     ${URL_web}     ${Browser}
     Maximize Browser Window          
-    sleep  1
+    Wait Until Page Contains        ${URL_web}
 Search_Text
     [Arguments]    ${Text_Searh}
     Input text     ${Text_box}        ${Text_Searh} 
