@@ -11,7 +11,7 @@ Open web
     [Arguments]     ${Browser}
     Open Browser     ${URL_web}     ${Browser}
     Maximize Browser Window          
-    Wait Until Page Contains    google
+    Wait Until Page Contains    ${Browser}
 Search Text
     [Arguments]    ${Text_Searh}
     Input text     ${Text_box}        ${Text_Searh} 
@@ -30,8 +30,18 @@ Click link
 
 *** Test Case ***
 Click_link3_Test
-    Open web  gc
+    Open web  ff
     Search_Text     robot framework
     Verify Text     robot framework
     Click link      3       
+Click_link4_Test
+    Open web  ff
+    Search_Text     robot framework
+    Verify Text     robot framework
+    Click link      4
+Click_link5_Test
+    Open web  ff
+    Search_Text     robot framework
+    Verify Text     robot framework
+    Click link      5              
 
