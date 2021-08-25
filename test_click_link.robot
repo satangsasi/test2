@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-Test Teardown       Close Browser
+Suite Teardown        Close Browser
 *** Variable ***
 ${URL_web}      https://www.google.com/
 ${Text_box}     name=q
@@ -25,23 +25,18 @@ Click link
     [Arguments]         ${index}    
     click Element       ${link}\[${index}]
     Wait Until Page Does Not Contain Element        ${link}
-    Page Should Not Contain Element       ${link}     
-
+    Page Should Not Contain Element     ${link}     
 
 *** Test Case ***
 Click_link3_Test
-    Open web  ff
+    Open web  gc
     Search_Text     robot framework
     Verify Text     robot framework
-    Click link      3       
+    Click link      3
+    Go back       
 Click_link4_Test
-    Open web  ff
-    Search_Text     robot framework
-    Verify Text     robot framework
     Click link      4
+    Go back
 Click_link5_Test
-    Open web  ff
-    Search_Text     robot framework
-    Verify Text     robot framework
     Click link      5              
 
