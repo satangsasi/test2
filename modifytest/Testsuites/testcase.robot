@@ -1,15 +1,15 @@
 *** Settings ***
-Resource        ../Resources/Keywords/createtestkeywords.robot    
+Resource        ../Resources/Keywords/createtestkeywords.robot
 Resource        ../Resources/Localized/${lang}/createtestLocalized.robot
 Test Teardown       Close Browser
 Suite Teardown      Close Browser
 *** Test Case ***
 search_text_google
-    open web  gc
+    open web         ff
     search text     robot framemwork
     verify text     robot framework
 search_text_andclicklink3_google
-    open web  gc
+    open web  ff
     search text     robot framework
     verify text     robot framework
     click link      3
