@@ -15,7 +15,8 @@ open app mood
     ...         noReset=true
 get otp
     Tap     ${lbl_accoutdtacmassage}
-    AppiumLibrary.Wait Until Page Contains Element      ${txt_massageotp}     
+    AppiumLibrary.Wait Until Page Contains Element      ${txt_massageotp}   10s   
+    AppiumLibrary.Capture Page Screenshot       OTPIMAGE
     ${text_OTP}     AppiumLibrary.Get Text    ${txt_massageotp}
     ${TextNumber_OTP} =    Get Regexp Matches     ${text_OTP}    ([0-9]{4})
     Set Test Variable      ${TextNumber_OTP}      ${TextNumber_OTP}  
