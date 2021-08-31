@@ -15,4 +15,7 @@ Click login
     SeleniumLibrary.Wait Until Page Contains Element        ${btn_next}
     SeleniumLibrary.Click Element   ${btn_next}
 Input OTP number 
-    SeleniumLibrary.Input Text      ${txt_otpweb}       ${TextNumber_OTP}                        
+    SeleniumLibrary.Input Text      ${txt_otpweb1}       ${TextNumber_OTP}[0]
+    SeleniumLibrary.Input Text      ${txt_otpweb2}       ${TextNumber_OTP}[1]
+    SeleniumLibrary.Input Text      ${txt_otpweb3}       ${TextNumber_OTP}[2]
+    SeleniumLibrary.Input Text      ${txt_otpweb4}       ${TextNumber_OTP}[3]                                                                                                

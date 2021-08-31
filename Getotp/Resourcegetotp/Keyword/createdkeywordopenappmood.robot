@@ -13,7 +13,7 @@ open app mood
     ...         appPackage=com.calea.echo
     ...         automationName=UiAutomator2
     ...         noReset=true
-get_otp
+get otp
     Tap     ${lbl_accoutdtacmassage}
     AppiumLibrary.Wait Until Page Contains Element      ${txt_massageotp}     
     ${text_OTP}     AppiumLibrary.Get Text    ${txt_massageotp}
