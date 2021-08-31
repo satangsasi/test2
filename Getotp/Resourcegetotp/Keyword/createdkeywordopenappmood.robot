@@ -19,4 +19,4 @@ get_otp
     ${text_OTP}     AppiumLibrary.Get Text    ${txt_massageotp}
     ${TextNumber_OTP} =    Get Regexp Matches     ${text_OTP}    ([0-9]{4})
     Set Test Variable      ${TextNumber_OTP}      ${TextNumber_OTP}  
-    #[Return]        ${TextNumber_OTP}
+    
