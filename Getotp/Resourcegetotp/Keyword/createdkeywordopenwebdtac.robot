@@ -18,7 +18,9 @@ Input OTP number
     SeleniumLibrary.Wait Until Page Contains Element        ${txt_otpweb}   
     SeleniumLibrary.Input Text      ${txt_otpweb}       ${TextNumber_OTP}
 Verify Page login
-    SeleniumLibrary.Wait Until Page Contains Element   ${lbl_usagesummary}      10s
-    SeleniumLibrary.Page Should Contain Element     ${lbl_usagesummary}         10s
+    SeleniumLibrary.Wait Until Page Contains Element   ${lbl_phonenumber}      10s
+    SeleniumLibrary.Page Should Contain Element       ${lbl_phonenumber}       
+    SeleniumLibrary.Page Should Contain Element       ${img_iconcartoondtac}   
+    SeleniumLibrary.Page Should Contain Element       ${img_classmember}       
     SeleniumLibrary.Capture Page Screenshot         PROFILEIMAGE
                                                                                                   

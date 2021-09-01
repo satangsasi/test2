@@ -14,8 +14,9 @@ open app mood
     ...         automationName=UiAutomator2
     ...         noReset=true
 get otp
+    AppiumLibrary.Wait Until Page Contains Element      ${lbl_accoutdtacmassage} 
     Tap     ${lbl_accoutdtacmassage}
-    AppiumLibrary.Wait Until Page Contains Element      ${txt_massageotp}   10s   
+    AppiumLibrary.Wait Until Page Contains Element      ${txt_massageotp}           
     AppiumLibrary.Capture Page Screenshot       OTPIMAGE
     ${text_OTP}     AppiumLibrary.Get Text    ${txt_massageotp}
     ${TextNumber_OTP} =    Get Regexp Matches     ${text_OTP}    ([0-9]{4})
